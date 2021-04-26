@@ -34,8 +34,10 @@ g" width="50%" height="20px" title="" />` |
 >>>     代码行
 
 ```java
-public static void main(String args[]) {
-    System.out.println("Hello World!");
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("HelloWorld");
+    }
 }
 ```
 
