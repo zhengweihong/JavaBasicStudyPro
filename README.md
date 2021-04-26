@@ -2,8 +2,8 @@
 
 ## Markdown语法
 
-## 数据结构 & 算法 Module
+## Module 数据结构 & 算法
 
-## Java基础语法 Module
+## Module Java基础语法
 ### Package01 基础语法
 ### Package02 集合框架
