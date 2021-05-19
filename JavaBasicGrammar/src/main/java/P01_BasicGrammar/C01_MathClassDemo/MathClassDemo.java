@@ -6,6 +6,10 @@ package P01_BasicGrammar.C01_MathClassDemo;
  */
 public class MathClassDemo {
     public static void main(String[] args) {
+        int x=3,y=4;
+        System.out.println(-x*y+y);//-(3*4)+4=-8
+        System.out.println(3/2 +" "+3/2.0);//1 1.5
+
         System.out.println(Math.abs(-1));//|-1|
         System.out.println(Math.sqrt(2));//√
         System.out.println(Math.ceil(-3.14));
