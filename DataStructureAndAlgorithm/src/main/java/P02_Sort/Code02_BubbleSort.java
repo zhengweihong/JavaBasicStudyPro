@@ -3,7 +3,7 @@ package P02_Sort;
 /**
  * @author : ZWH 2021/5/17
  * @version : 1.0
- * from small to big
+ * Sort : from small to big
  */
 public class Code02_BubbleSort {
     public void bubbleSort(int[] arr) {
