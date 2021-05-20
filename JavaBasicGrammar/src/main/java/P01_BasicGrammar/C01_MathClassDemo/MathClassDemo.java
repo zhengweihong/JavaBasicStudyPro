@@ -16,6 +16,10 @@ public class MathClassDemo {
         System.out.println(Math.floor(-3.14));
         System.out.println(Math.pow(2,3));//2^3
 
+        //print a percentage
+        double d = 3.1415926;
+        System.out.printf("%.2f%%\n",d*100);//314.16%，四舍五入了
+
         Point p1 = new Point();
         p1.set(3,5);
         Point p2 = new Point();
