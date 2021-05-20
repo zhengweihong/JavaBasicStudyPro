@@ -25,6 +25,10 @@ public class Code01_ComparatorDemo {
         int a = (int) (Math.random() * 9 + 1);//+1!!!
         System.out.println("Math.random():"+a);
 
+        //返回等概率的整数：0-9
+        int a0 = (int) (Math.random() * (9 + 1));//(+1)
+        System.out.println("Math.random():"+a0);
+
         double test = Math.random() * 8;    //[0,8)
         int testInt = (int) test;           //[0,7]
 
