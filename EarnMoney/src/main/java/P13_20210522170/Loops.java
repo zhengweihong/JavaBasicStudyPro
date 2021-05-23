@@ -1,4 +1,4 @@
-package P13_2021052270;
+package P13_20210522170;
 
 /**
  * @author : ZWH 2021/5/22
@@ -7,7 +7,7 @@ package P13_2021052270;
 public class Loops {
     public static void main(String[] args) {
         int i=0;
-        System.out.println("sfdasfads"+i);
+        System.out.println("int:"+i);
 
         double f = 9.2312312;
         System.out.printf("%.2f",f);//format
@@ -30,8 +30,8 @@ public class Loops {
         int y = 3;
         System.out.println(x+" & "+y+" max value is "+maxFunc(x,y));
 
-        String c = "c";
-
+        String c1 = "c";
+        char c2 = 'c';
 
         int[] x1 = {1,1,1}, y1 = {1,1,1};
         for(int item: x1)
