@@ -12,8 +12,8 @@ public class CopyPicture {
         String fileName2 = "EarnMoney/src/main/java/P14_2021052435/图片2.png";
 
         try (
-                InputStream is = new FileInputStream(fileName1);
-                OutputStream os = new FileOutputStream(fileName2)
+            InputStream is = new FileInputStream(fileName1);
+            OutputStream os = new FileOutputStream(fileName2)
         ) {
             int length = 0;
             byte[] buffer = new byte[1024];
