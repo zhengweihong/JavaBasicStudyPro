@@ -28,7 +28,7 @@ public class DictionaryAndEssay {
         String essayFile = "EarnMoney/src/main/java/P11_20210519110/Code01/文章1.txt";
 
         HashSet<String> dicItems = new HashSet<>();
-        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(dictionaryFile));) {
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(dictionaryFile))) {
             String aLine = null;
             while ((aLine = bufferedReader.readLine()) != null) {
                 dicItems.add(aLine);
