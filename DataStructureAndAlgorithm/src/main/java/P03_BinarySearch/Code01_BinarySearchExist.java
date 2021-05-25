@@ -31,7 +31,7 @@ public class Code01_BinarySearchExist {
         //如果while(L<R)，L==R的时候停止循环，需要单独判断L位置的
     }
 
-//    public static void main(String[] args) {
-//        System.out.println(binarySearchExist(new int[]{1, 2, 3, 4, 5, 6},0));
-//    }
+    public static void main(String[] args) {
+        //System.out.println(binarySearchExist(new int[]{1, 2, 3, 4, 5, 6},0));
+    }
 }
