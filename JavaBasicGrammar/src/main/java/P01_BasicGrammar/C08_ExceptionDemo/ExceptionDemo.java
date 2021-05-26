@@ -10,5 +10,8 @@ public class ExceptionDemo {
         if (i < 0 || i > 10) {
             throw new IndexOutOfBoundsException();
         }
+        if (i > 3 && i < 8) {
+            throw new RuntimeException("可以加String");
+        }
     }
 }
