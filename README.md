@@ -6,16 +6,16 @@
 ### Package01 算法工具
 ### Package02 排序
 ### Package03 二分法
-位运算BitOperation
+### Package04 位运算
+### Package05 链表
+### Package05 栈 队列
+
 递归
 贪心
 并查集
 动态规划
 
 顺序表SeqList
-链表LinkedList
-栈Stack
-队列Queue
 堆Heap
 树Tree
 图Map
@@ -32,4 +32,5 @@
 ### Package07 函数式编程
 ### Package08 反射
 
-### Package11 JDBC
+### Package11 JUnit
+### Package12 JDBC

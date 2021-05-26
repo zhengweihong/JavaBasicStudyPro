@@ -1,4 +1,4 @@
-package P05_1_List;
+package P05_1_LinkedList;
 
 /**
  * @author : ZWH 2021/5/26
