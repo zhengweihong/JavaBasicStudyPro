@@ -9,8 +9,9 @@
 ### Package04 位运算
 ### Package05 链表
 ### Package05 栈 队列
+### Package06 递归
+### Package07 哈希表 有序表
 
-递归
 贪心
 并查集
 动态规划
