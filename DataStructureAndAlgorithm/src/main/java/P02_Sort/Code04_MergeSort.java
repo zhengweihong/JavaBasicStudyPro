@@ -5,4 +5,6 @@ package P02_Sort;
  * @version : 1.0
  */
 public class Code04_MergeSort {
+    public static void main(String[] args) {
+    }
 }
