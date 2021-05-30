@@ -8,7 +8,8 @@ package P12_JDBC;
 
 import java.io.*;
 import java.sql.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class conMysql {
 	Statement stmt;
