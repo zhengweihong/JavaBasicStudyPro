@@ -6,6 +6,6 @@ package P02_Sort;
  */
 public class Code04_MergeSort {
     public static void main(String[] args) {
-//test
+
     }
 }
