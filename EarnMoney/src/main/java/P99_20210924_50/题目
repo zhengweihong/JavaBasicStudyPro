@@ -1,0 +1,11 @@
+很久以前，在阿斯加德的土地上住着3个巫师甘道夫，梅林和邓布利多。这三个巫师经常争论谁是有史以来最伟大的软件开发人员。为了一劳永逸地结束这场争论，他们同意。甘道夫是一个糟糕的射手，只有1/3的概率击中目标。梅林稍微好一点，命中目标的概率是1/2。邓布利多是一个专业的射手，命中目标的概率是100%。击中意味着杀戮，被击中的人退出决斗。
+
+为了弥补射击技巧上的不平等，三人决定轮流开火，先是甘道夫，然后是梅林，最后是邓布利多。这个循环会一直重复，直到有一个人或生物站着，而这个人或生物将是有史以来最伟大的软件开发人员。
+
+一个明显而合理的策略是让每个巫师射向仍然活着的最准确的射手，理由是这个射手是最致命的，并且有最好的反击机会。
+
+用这个策略编写一个程序来模拟决斗。你的程序应该使用随机数和问题中给出的概率来确定射手是否击中目标。
+
+Write a program to simulate the fight using this strategy. Your program should use random numbers and the probabilities given in the problem to determine whether a shooter hits the target.
+Create a class named Combatant that contains the fighter’s name and shooting accuracy, a Boolean indicating whether the fighter is still alive, and a method ShootAtTarget(Combatant target) that sets the target to dead if the fighter hits his target (using a random number and the shooting accuracy) and does nothing otherwise.
+Once you can simulate a single fight, add a loop to your program that simulates 10,000 fights. Count the number of times that each contestant wins and print the probability of winning for each contestant (e.g., for Deadpool your program might output “Deadpool won 3595/10,000 fights or 35.95 %”).
