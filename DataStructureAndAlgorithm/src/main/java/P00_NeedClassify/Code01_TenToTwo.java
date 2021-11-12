@@ -1,4 +1,4 @@
-package P00_OldClass;
+package P00_NeedClassify;
 import java.util.*;
 
 public class Code01_TenToTwo {
