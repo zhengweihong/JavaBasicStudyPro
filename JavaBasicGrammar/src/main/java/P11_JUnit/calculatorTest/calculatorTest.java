@@ -1,6 +1,6 @@
 package P11_JUnit.calculatorTest;
 
-import P11_JUnit.calculator.calculator;
+import P11_JUnit.calculator.Calculator;
 import org.junit.*;
 
 /**
@@ -19,7 +19,7 @@ public class calculatorTest {
 
     @Test
     public void testAdd() {
-        int result = new calculator().add(10,30);
+        int result = new Calculator().add(10,30);
         Assert.assertEquals(40,result);
     }
 }
