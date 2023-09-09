@@ -1,4 +1,4 @@
-package P00_NeedClassify;
+package P100_NeedClassify;
 import java.util.*;
 
 public class Code04_FibonacciSequence {
