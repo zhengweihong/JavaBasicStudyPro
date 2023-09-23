@@ -36,4 +36,10 @@ public class Code01_SelectionSort {
         arr[j] = tmp;
     }
 
+    public void swapNoTemp(int[] arr, int left, int right) {
+        arr[left] = arr[left] ^ arr[right];
+        arr[right] = arr[left] ^ arr[right];
+        arr[left] = arr[left] ^ arr[right];
+    }
+
 }
