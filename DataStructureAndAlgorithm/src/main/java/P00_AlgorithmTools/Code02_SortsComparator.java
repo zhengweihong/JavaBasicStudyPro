@@ -1,6 +1,6 @@
-package P01_AlgorithmTool;
+package P00_AlgorithmTools;
 
-import P02_Sort.*;
+import P01_Sort.*;
 
 /**
  * @author : ZWH 2021/5/17

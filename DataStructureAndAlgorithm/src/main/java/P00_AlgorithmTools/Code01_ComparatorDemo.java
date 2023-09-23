@@ -1,4 +1,4 @@
-package P01_AlgorithmTool;
+package P00_AlgorithmTools;
 
 import java.util.HashMap;
 

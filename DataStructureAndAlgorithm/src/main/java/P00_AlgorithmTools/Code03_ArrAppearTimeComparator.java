@@ -1,4 +1,4 @@
-package P01_AlgorithmTool;
+package P00_AlgorithmTools;
 
 import P04_BitOperation.Code05_XORFindAppearKTime;
 
