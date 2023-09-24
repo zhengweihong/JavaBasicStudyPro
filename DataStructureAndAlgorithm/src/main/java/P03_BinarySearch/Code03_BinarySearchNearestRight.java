@@ -1,15 +1,16 @@
 package P03_BinarySearch;
 
 /**
- * @author : ZWH 2021/5/25
- * @version : 1.0
+ * @author : ZWH
+ * @date : 2021/05/25
+ * @Description : 二分法：有序数组，找<=某个数，最右的位置
  */
 public class Code03_BinarySearchNearestRight {
     //L...mid...R
     //L..R
     //       L..R
     //找<=num最右的index
-    public int nearestRightIndex (int[] sortedArr,int num) {
+    public int nearestRightIndex(int[] sortedArr, int num) {
         int index = -1;
         if (sortedArr == null || sortedArr.length == 0) return index;
 
@@ -29,9 +30,9 @@ public class Code03_BinarySearchNearestRight {
         return index;
     }
 
-    public int rightTest (int[] sortedArr,int num) {
+    public int rightTest(int[] sortedArr, int num) {
         if (sortedArr == null || sortedArr.length == 0) return -1;
-        for (int i = sortedArr.length - 1; i >= 0 ; i--) {
+        for (int i = sortedArr.length - 1; i >= 0; i--) {
             if (sortedArr[i] <= num)
                 return i;
         }

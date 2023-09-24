@@ -1,8 +1,9 @@
 package P04_BitOperation;
 
 /**
- * @author : ZWH 2021/5/25
- * @version : 1.0
+ * @author : ZWH
+ * @date : 2021/05/25
+ * @Description :
  */
 public class Code01_BitOperation {
     public static void main(String[] args) {
@@ -17,10 +18,10 @@ public class Code01_BitOperation {
         System.out.println();
 
         //>>\>>>
-        new Code02_PrintBit32().printBit32(b>>1);
-        new Code02_PrintBit32().printBit32(b>>2);
-        new Code02_PrintBit32().printBit32(b>>3);
-        new Code02_PrintBit32().printBit32(b>>>3);//经过位置置0
+        new Code02_PrintBit32().printBit32(b >> 1);
+        new Code02_PrintBit32().printBit32(b >> 2);
+        new Code02_PrintBit32().printBit32(b >> 3);
+        new Code02_PrintBit32().printBit32(b >>> 3);//经过位置置0
 
         System.out.println();
 
@@ -30,9 +31,9 @@ public class Code01_BitOperation {
         new Code02_PrintBit32().printBit32(~1);//符号位也变
 
         //原 反~ 补~+1；补码原因：模
-        System.out.println(~1+1);//-1：~a+1 == -a
-        new Code02_PrintBit32().printBit32(~1+1);
-        new Code02_PrintBit32().printBit32((~1+1) + 1);//得到模
+        System.out.println(~1 + 1);//-1：~a+1 == -a
+        new Code02_PrintBit32().printBit32(~1 + 1);
+        new Code02_PrintBit32().printBit32((~1 + 1) + 1);//得到模
 
         //~a+1 == -a
         System.out.println(-1);
@@ -44,6 +45,6 @@ public class Code01_BitOperation {
         int num = 88;
         new Code02_PrintBit32().printBit32(num);
         new Code02_PrintBit32().printBit32(num & (-num));
-        new Code02_PrintBit32().printBit32(num & (~num+1));
+        new Code02_PrintBit32().printBit32(num & (~num + 1));
     }
 }
