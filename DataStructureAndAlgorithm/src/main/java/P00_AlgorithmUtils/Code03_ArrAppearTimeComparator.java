@@ -1,6 +1,6 @@
 package P00_AlgorithmUtils;
 
-import P04_BitOperation.Code05_XorFindAppearKTime;
+import P03_BitOperation.Code05_XorFindAppearKTime;
 
 import java.util.HashSet;
 

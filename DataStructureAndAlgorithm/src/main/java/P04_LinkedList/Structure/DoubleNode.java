@@ -1,4 +1,4 @@
-package P05_LinkedList.Structure;
+package P04_LinkedList.Structure;
 
 /**
  * @author : ZWH

@@ -1,4 +1,4 @@
-package P03_BinarySearch;
+package P02_BinarySearch;
 
 /**
  * @author : ZWH

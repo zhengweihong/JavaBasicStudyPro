@@ -1,11 +1,11 @@
-package P04_BitOperation;
+package P03_BitOperation;
 
 import java.util.HashMap;
 
 /**
  * @author : ZWH
  * @date : 2021/05/25
- * @Description : 异或运算：
+ * @Description : 异或运算：找到出现K次的数
  */
 public class Code05_XorFindAppearKTime {
     public int XORFindAppearKTime(int[] arr, int k, int m) {

@@ -1,6 +1,6 @@
 package P09_HashTable_SortedList;
 
-import P05_LinkedList.Structure.Node;
+import P04_LinkedList.Structure.Node;
 
 import java.util.HashMap;
 

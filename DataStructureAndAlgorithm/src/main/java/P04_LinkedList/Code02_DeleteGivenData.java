@@ -1,6 +1,6 @@
-package P05_LinkedList;
+package P04_LinkedList;
 
-import P05_LinkedList.Structure.Node;
+import P04_LinkedList.Structure.Node;
 
 /**
  * @author : ZWH
