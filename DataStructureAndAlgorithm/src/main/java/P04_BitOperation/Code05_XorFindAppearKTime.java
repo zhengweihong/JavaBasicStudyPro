@@ -7,7 +7,7 @@ import java.util.HashMap;
  * @date : 2021/05/25
  * @Description : 异或运算：
  */
-public class Code05_XORFindAppearKTime {
+public class Code05_XorFindAppearKTime {
     public int XORFindAppearKTime(int[] arr, int k, int m) {
         int[] t = new int[32];//0位～31位
         for (int arri : arr) {
@@ -65,7 +65,7 @@ public class Code05_XORFindAppearKTime {
 
     public static void main(String[] args) {
         int[] arr = {0, 0, 2, 2, 2, 3, 3, 3, 4, 4, 4};
-        int a = new Code05_XORFindAppearKTime().XORFindAppearKTime(arr, 2, 3);
+        int a = new Code05_XorFindAppearKTime().XORFindAppearKTime(arr, 2, 3);
         System.out.println(a);
     }
 }

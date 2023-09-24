@@ -1,6 +1,6 @@
 package P00_AlgorithmUtils;
 
-import P04_BitOperation.Code05_XORFindAppearKTime;
+import P04_BitOperation.Code05_XorFindAppearKTime;
 
 import java.util.HashSet;
 
@@ -24,8 +24,8 @@ public class Code03_ArrAppearTimeComparator {
             if (k == m) m++;//k < m
 
             int[] arr = generateRandomArray(arrMaxKinds, arrMaxValue, k, m);
-            int answer1 = new Code05_XORFindAppearKTime().hashMapBuildFrequency(arr, k, m);
-            int answer2 = new Code05_XORFindAppearKTime().XORFindAppearKTime(arr, k, m);
+            int answer1 = new Code05_XorFindAppearKTime().hashMapBuildFrequency(arr, k, m);
+            int answer2 = new Code05_XorFindAppearKTime().XORFindAppearKTime(arr, k, m);
             if (answer1 != answer2)
                 System.out.println("Error!!!");
         }
