@@ -1,4 +1,4 @@
-package P05_2_Stack_Queue;
+package P06_Stack_Queue;
 
 /**
  * @author : ZWH 2021/5/26

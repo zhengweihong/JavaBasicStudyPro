@@ -1,15 +1,18 @@
-package P05_1_LinkedList;
+package P05_LinkedList;
+
+import P05_LinkedList.Structure.Node;
 
 /**
- * @author : ZWH 2021/5/26
- * @version : 1.0
+ * @author : ZWH
+ * @date : 2021/05/26
+ * @Description : 链表操作：删除给定值
  */
 public class Code02_DeleteGivenData {
-    public <T> MyNode deleteGivenData (MyNode head,T data) {
-        while (head != null && head.data ==data)
+    public <T> Node deleteGivenData(Node head, T data) {
+        while (head != null && head.data == data)
             head = head.next;
 
-        MyNode pre = head;//head.date必!=data
+        Node pre = head;//head.date必!=data
         while (pre.next != null) {
             if (pre.next.data == data) {
                 pre.next = pre.next.next;//pre不能向后走

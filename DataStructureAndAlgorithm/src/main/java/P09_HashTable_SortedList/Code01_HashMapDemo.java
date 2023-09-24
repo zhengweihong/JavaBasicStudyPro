@@ -1,6 +1,6 @@
-package P07_HashTable_SortedList;
+package P09_HashTable_SortedList;
 
-import P05_1_LinkedList.MyNode;
+import P05_LinkedList.Structure.Node;
 
 import java.util.HashMap;
 
@@ -24,9 +24,9 @@ public class Code01_HashMapDemo {
         System.out.println(map.containsKey(b));//true，比值
         System.out.println(map.containsValue(b+""));//true，比值
 
-        HashMap<MyNode,String> map2 = new HashMap<>();
-        map2.put(new MyNode(1),"1");
-        System.out.println(map2.containsKey(new MyNode(1)));//false，比地址
+        HashMap<Node,String> map2 = new HashMap<>();
+        map2.put(new Node(1),"1");
+        System.out.println(map2.containsKey(new Node(1)));//false，比地址
         System.out.println(map2.containsValue("1"));//true，比值
     }
 }

@@ -1,8 +1,12 @@
-package P05_1_LinkedList;
+package P05_LinkedList;
+
+import P05_LinkedList.Structure.DoubleNode;
+import P05_LinkedList.Structure.Node;
 
 /**
- * @author : ZWH 2021/5/26
- * @version : 1.0
+ * @author : ZWH
+ * @date : 2021/05/26
+ * @Description : 链表操作：反转
  */
 public class Code01_ReverseList {
     /*
@@ -13,9 +17,9 @@ public class Code01_ReverseList {
               2<-       1next
                   1pre   2cur
      */
-    public MyNode reverseList (MyNode head) {
-        MyNode pre = null;
-        MyNode next = null;
+    public Node reverseList(Node head) {
+        Node pre = null;
+        Node next = null;
         while (head != null) {
             next = head.next;
             head.next = pre;
@@ -25,9 +29,9 @@ public class Code01_ReverseList {
         return pre;
     }
 
-    public MyDoubleNode reverseDoubleList (MyDoubleNode head) {
-        MyDoubleNode pre = null;
-        MyDoubleNode next = null;
+    public DoubleNode reverseDoubleList(DoubleNode head) {
+        DoubleNode pre = null;
+        DoubleNode next = null;
         while (head != null) {
             next = head.next;
             head.next = pre;
