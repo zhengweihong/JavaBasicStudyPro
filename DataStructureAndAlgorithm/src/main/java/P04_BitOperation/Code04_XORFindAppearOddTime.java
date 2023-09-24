@@ -3,9 +3,10 @@ package P04_BitOperation;
 /**
  * @author : ZWH
  * @date : 2021/05/25
- * @Description : 异或运算：
+ * @Description : 异或运算：找到出现奇数次的数
  */
 public class Code04_XORFindAppearOddTime {
+
     public void XORFindAppearOddTime1(int[] arr) {
         int oddNum = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -30,4 +31,5 @@ public class Code04_XORFindAppearOddTime {
         }
         System.out.println(oddNum1 + " " + (oddNumXOR ^ oddNum1));
     }
+
 }
