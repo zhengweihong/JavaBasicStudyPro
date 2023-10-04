@@ -25,7 +25,7 @@ public class Code03_ArrAppearTimeComparator {
 
             int[] arr = generateRandomArray(arrMaxKinds, arrMaxValue, k, m);
             int answer1 = new Code05_XorFindAppearKTime().hashMapBuildFrequency(arr, k, m);
-            int answer2 = new Code05_XorFindAppearKTime().XORFindAppearKTime(arr, k, m);
+            int answer2 = new Code05_XorFindAppearKTime().xorFindAppearKTime(arr, k, m);
             if (answer1 != answer2)
                 System.out.println("Error!!!");
         }
