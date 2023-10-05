@@ -9,8 +9,4 @@ public class DoubleNode<T> {
     public T data;
     public DoubleNode pre;
     public DoubleNode next;
-
-    public DoubleNode(T data) {
-        this.data = data;
-    }
 }

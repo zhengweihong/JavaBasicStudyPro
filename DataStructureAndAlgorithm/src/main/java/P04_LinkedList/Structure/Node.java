@@ -12,26 +12,9 @@ public class Node<T> {
     public Node(T data) {
         this.data = data;
     }
-
-    public Node(T data, Node next) {
-        this.data = data;
-        this.next = next;
-    }
 }
 
-
-class NodeIntValue {
-
+class IntValueNode {
     private int data;
-    private NodeIntValue next;
-
-    public NodeIntValue(int data) {
-        this.data = data;
-    }
-
-    public NodeIntValue(int data, NodeIntValue next) {
-        this.data = data;
-        this.next = next;
-    }
-
+    private IntValueNode next;
 }
