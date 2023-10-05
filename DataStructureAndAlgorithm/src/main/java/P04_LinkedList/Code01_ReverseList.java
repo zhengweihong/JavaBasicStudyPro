@@ -9,6 +9,12 @@ import P04_LinkedList.Structure.Node;
  * @Description : 链表操作：反转
  */
 public class Code01_ReverseList {
+    /**
+     * next指下一个不丢
+     * 指下一个的指针换node
+     * 挪pre
+     * 挪锚点
+     */
     /*
                   head
                    a  ->  b  ->  c  ->  null
@@ -29,6 +35,12 @@ public class Code01_ReverseList {
         return pre;
     }
 
+    /**
+     * next指下一个不丢
+     * 指双向的指针换node
+     * 挪pre
+     * 挪锚点
+     */
     public DoubleNode reverseDoubleList(DoubleNode head) {
         DoubleNode pre = null;
         DoubleNode next = null;
