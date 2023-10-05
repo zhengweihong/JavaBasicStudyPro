@@ -57,7 +57,9 @@ public class Code01_ComparatorDemo {
         );
     }
 
-    //随机出x^2概率的x
+    /**
+     * @return 随机出x^2概率的x
+     */
     /*
         [0,1)的一个小数，[0,x)的数出现概率是x
         用两次独立行为+max，得到x出现概率是 x平方

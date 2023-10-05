@@ -65,6 +65,9 @@ public class Code05_XorFindAppearKTime {
         return num;
     }
 
+    /**
+     * 暴力解：HashMap建立词频（用于对数器ArrAppearTimeComparator）
+     */
     public int hashMapBuildFrequency(int[] arr, int k, int m) {
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int arri : arr) {
@@ -79,7 +82,8 @@ public class Code05_XorFindAppearKTime {
                 return num;
             }
         }
-        return -1;//wrong answer 有问题
+        // wrong answer 有问题
+        return -1;
     }
 
     public static void main(String[] args) {
