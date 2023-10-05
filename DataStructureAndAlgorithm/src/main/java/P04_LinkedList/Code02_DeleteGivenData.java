@@ -9,15 +9,18 @@ import P04_LinkedList.Structure.Node;
  */
 public class Code02_DeleteGivenData {
     public <T> Node deleteGivenData(Node head, T data) {
-        while (head != null && head.data == data)
+        while (head != null && head.data == data) {
             head = head.next;
+        }
 
-        Node pre = head;//head.date必!=data
-        while (pre.next != null) {
-            if (pre.next.data == data) {
-                pre.next = pre.next.next;//pre不能向后走
+        // head.date必!=data
+        Node tmp = head;
+        while (tmp.next != null) {
+            if (tmp.next.data == data) {
+                // pre不能向后走
+                tmp.next = tmp.next.next;
             } else {
-                pre = pre.next;
+                tmp = tmp.next;
             }
         }
         return head;
