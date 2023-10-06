@@ -1,4 +1,4 @@
-package P06_Stack_Queue;
+package P06_Queue;
 
 import java.util.LinkedList;
 import java.util.Queue;
