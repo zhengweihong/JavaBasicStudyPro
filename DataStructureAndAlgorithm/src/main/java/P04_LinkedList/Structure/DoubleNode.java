@@ -7,6 +7,12 @@ package P04_LinkedList.Structure;
  */
 public class DoubleNode<T> {
     public T data;
-    public DoubleNode pre;
-    public DoubleNode next;
+    public DoubleNode<T> pre;
+    public DoubleNode<T> next;
+
+    public DoubleNode(T data, DoubleNode<T> pre, DoubleNode<T> next) {
+        this.data = data;
+        this.pre = pre;
+        this.next = next;
+    }
 }
