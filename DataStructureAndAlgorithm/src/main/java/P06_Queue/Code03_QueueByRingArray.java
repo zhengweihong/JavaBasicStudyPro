@@ -1,46 +1,68 @@
 package P06_Queue;
 
 /**
- * @author : ZWH 2021/5/26
- * @version : 1.0
+ * @author : ZWH
+ * @date : 2021/5/26
+ * @Description : 数组实现队列
  */
 public class Code03_QueueByRingArray {
-    public class MyQueue {
+    public class QueueByArray {
         private int[] arr;
-        private int start;//pop
-        private int end;//push
         private int size;
-        private final int capacity;
+        // poll arri
+        private int start;
+        // add arri
+        private int end;
 
-        public MyQueue (int capacity) {
+        public QueueByArray(int capacity) {
             arr = new int[capacity];
+            size = 0;
             start = 0;
             end = 0;
-            size = 0;
-            this.capacity = capacity;
         }
 
-        private int nextIndex (int index) {
-            return index < capacity-1 ? index+1 : 0;
+        /**
+         * 正常+1，到边界回到0
+         */
+        private int nextIndex(int index) {
+            return index < arr.length - 1 ? index + 1 : 0;
         }
 
-        public void push (int value) {
-            if (size == capacity) throw new IndexOutOfBoundsException("Full Queue!");
+        public int size() {
+            return size;
+        }
+
+        public boolean isEmpty() {
+            return size == 0;
+        }
+
+        // 入队
+        public void add(int data) {
+            if (size >= arr.length) {
+                throw new RuntimeException("Full Queue!");
+            }
             size++;
-            arr[end] = value;
+            arr[end] = data;
             end = nextIndex(end);
         }
 
-        public int pop () {
-            if (size == 0) throw new IndexOutOfBoundsException("Empty Queue!");
+        // 出队
+        public int poll() {
+            if (size == 0) {
+                throw new RuntimeException("Empty Queue!");
+            }
             size--;
-            int popData = arr[start];
+            int data = arr[start];
             start = nextIndex(start);
-            return popData;
+            return data;
         }
 
-        public boolean isEmpty () {
-            return size == 0;
+        // 看
+        public int peek() {
+            if (size == 0) {
+                throw new RuntimeException("Empty Queue!");
+            }
+            return arr[start];
         }
     }
 }
