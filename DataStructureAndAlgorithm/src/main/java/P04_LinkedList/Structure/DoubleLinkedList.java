@@ -42,4 +42,26 @@ public class DoubleLinkedList<T> {
         }
         return head.data;
     }
+
+    public T popFromTail() {
+        if (tail == null) {
+            return null;
+        }
+        T data = tail.data;
+        if (head == tail) {
+            head = null;
+            tail = null;
+        } else {
+            tail = tail.pre;
+            tail.next = null;
+        }
+        return data;
+    }
+
+    public T lookAtTail() {
+        if (tail == null) {
+            return null;
+        }
+        return tail.data;
+    }
 }
