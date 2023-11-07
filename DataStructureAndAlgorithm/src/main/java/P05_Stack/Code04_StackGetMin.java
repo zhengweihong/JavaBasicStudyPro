@@ -1,10 +1,11 @@
-package P06_Queue;
+package P05_Stack;
 
 import java.util.Stack;
 
 /**
- * @author : ZWH 2021/5/26
- * @version : 1.0
+ * @author : ZWH
+ * @date : 2021/5/26
+ * @Description : O(1)获取栈最小值
  */
 public class Code04_StackGetMin {
     public class MinStack {
@@ -16,20 +17,21 @@ public class Code04_StackGetMin {
             stackMin = new Stack<>();
         }
 
-        public void push(int value) {//Vector Len Auto Grown
-            stackData.push(value);
+        // Vector Len Auto Grown
+        public void push(int data) {
+            stackData.push(data);
             if (stackMin.isEmpty()) {
-                stackMin.push(value);
-            } else if (value < stackMin.peek()) {
-                stackMin.push(value);
-            } else {
-                stackMin.push(stackMin.peek());
+                stackMin.push(data);
             }
+            if (data < stackMin.peek()) {
+                stackMin.push(data);
+            }
+            stackMin.push(stackMin.peek());
         }
 
         public int pop() {
             if (stackData.isEmpty()) {
-                throw new IndexOutOfBoundsException("Empty Stack!");
+                throw new RuntimeException("Empty Stack!");
             }
             stackMin.pop();
             return stackData.pop();
@@ -37,7 +39,7 @@ public class Code04_StackGetMin {
 
         public int getMin() {
             if (stackMin.isEmpty()) {
-                throw new IndexOutOfBoundsException("Empty Stack!");
+                throw new RuntimeException("Empty Stack!");
             }
             return stackMin.peek();
         }
