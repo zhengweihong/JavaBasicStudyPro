@@ -1,21 +1,23 @@
 package P08_Recursion;
 
 /**
- * @author : ZWH 2021/5/27
- * @version : 1.0
+ * @author : ZWH
+ * @date : 2021/5/27
+ * @Description : 递归实现找最大值
  */
 public class Code01_getMax {
     public int getMax(int[] arr) {
-        return getMaxRange(arr,0,arr.length-1);
+        return getMaxRange(arr, 0, arr.length - 1);
     }
 
-    public int getMaxRange(int[] arr,int L,int R) {
-        if (L == R)
-            return arr[L];
+    public int getMaxRange(int[] arr, int l, int r) {
+        if (l == r) {
+            return arr[l];
+        }
 
-        int mid = L + ((R - L) >> 1);
-        int leftMax = getMaxRange(arr,L,mid);
-        int rightMax = getMaxRange(arr,mid+1,R);
-        return Math.max(leftMax,rightMax);
+        int mid = l + ((r - l) >> 1);
+        int leftMax = getMaxRange(arr, l, mid);
+        int rightMax = getMaxRange(arr, mid + 1, r);
+        return Math.max(leftMax, rightMax);
     }
 }
