@@ -1,11 +1,12 @@
-package P06_Queue;
+package P05_Stack;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * @author : ZWH 2021/5/27
- * @version : 1.0
+ * @author : ZWH
+ * @date : 2021/5/27
+ * @Description : 队列实现栈
  */
 public class Code05_StackByQueue {
     public class StackByQueue<T> {
@@ -22,32 +23,36 @@ public class Code05_StackByQueue {
         }
 
         public T pop() {
-            if (queue.isEmpty())
-                throw new IndexOutOfBoundsException("Empty Stack!");
+            if (queue.isEmpty()) {
+                throw new RuntimeException("Empty Stack!");
+            }
+
             while (queue.size() > 1) {
                 helpQ.offer(queue.poll());
             }
-            T value = queue.poll();
 
+            T data = queue.poll();
             Queue<T> tempQ = queue;
             queue = helpQ;
             helpQ = tempQ;
-
-            return value;
+            return data;
         }
 
         public T peek() {
-            if (queue.isEmpty())
-                throw new IndexOutOfBoundsException("Empty Stack!");
+            if (queue.isEmpty()) {
+                throw new RuntimeException("Empty Stack!");
+            }
+
             while (queue.size() > 1) {
                 helpQ.offer(queue.poll());
             }
-            T value = queue.poll();
-            helpQ.offer(value);
+
+            T data = queue.poll();
+            helpQ.offer(data);
             Queue<T> tempQ = queue;
             queue = helpQ;
             helpQ = tempQ;
-            return value;
+            return data;
         }
 
         public boolean isEmpty() {
