@@ -3,10 +3,11 @@ package P06_Queue;
 import java.util.Stack;
 
 /**
- * @author : ZWH 2021/5/27
- * @version : 1.0
+ * @author : ZWH
+ * @date : 2021/5/27
+ * @Description : 栈实现队列
  */
-public class Code06_QueueByStack {
+public class Code04_QueueByStack {
     public class QueueByStack<T> {
         private Stack<T> pushStack;
         private Stack<T> popStack;
@@ -24,30 +25,29 @@ public class Code06_QueueByStack {
             }
         }
 
-        public void offer(T value) {
-            pushStack.push(value);
+        public void add(T data) {
+            pushStack.push(data);
             pushToPop();
         }
 
         public T poll() {
-            if (pushStack.isEmpty() && popStack.isEmpty())
-                throw new IndexOutOfBoundsException("Empty Queue!");
+            if (pushStack.isEmpty() && popStack.isEmpty()) {
+                throw new RuntimeException("Empty Queue!");
+            }
             pushToPop();
             return popStack.pop();
         }
 
         public T peek() {
-            if (pushStack.isEmpty() && popStack.isEmpty())
-                throw new IndexOutOfBoundsException("Empty Queue!");
+            if (pushStack.isEmpty() && popStack.isEmpty()) {
+                throw new RuntimeException("Empty Queue!");
+            }
             pushToPop();
             return popStack.peek();
         }
 
         public boolean isEmpty() {
-            if (pushStack.isEmpty() && popStack.isEmpty())
-                return true;
-            else
-                return false;
+            return pushStack.isEmpty() && popStack.isEmpty();
         }
     }
 }
