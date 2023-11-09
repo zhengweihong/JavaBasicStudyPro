@@ -16,7 +16,7 @@ public class Code01_HashTableDemo {
         // HashMap：put、remove、get、containsKey、containsValue
         // HashSet：add、remove、contains
 
-        // 基础类型的包装比较 Integer常量池的范围是[-128,127]
+        /* 基础类型的包装比较 Integer常量池的范围是[-128,127] */
         Integer a = 1900;
         Integer b = 1900;
         // false，比地址
@@ -24,7 +24,7 @@ public class Code01_HashTableDemo {
         // true，比值
         System.out.println(a.equals(b));
 
-        // 哈希表中基础类型 按值传递
+        /* 哈希表中基础类型 按值传递 */
         HashMap<Integer, String> map = new HashMap<>();
         map.put(a, a.toString());
         // true，key比值
@@ -32,6 +32,7 @@ public class Code01_HashTableDemo {
         // true，value比值
         System.out.println(map.containsValue(b + ""));
 
+        /* 哈希表中自定义类 引用传递 */
         HashMap<Node, String> map2 = new HashMap<>();
         map2.put(new Node(1), "1");
         // false，key比地址
