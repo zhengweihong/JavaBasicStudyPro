@@ -28,7 +28,7 @@ public class Code01_MergeSortOnRecursion {
         merge(arr, l, mid, r);
     }
 
-    private void merge(int[] arr, int l, int mid, int r) {
+    public void merge(int[] arr, int l, int mid, int r) {
         int[] help = new int[r - l + 1];
         int hPoint = 0;
 
