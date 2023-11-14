@@ -15,7 +15,7 @@ public class Code01_MergeSortOnRecursion {
     }
 
     /**
-     * 把arr中下表l到r排有序
+     * 把arr中下标l到r排有序
      */
     private void mergeProcess(int[] arr, int l, int r) {
         // 停止条件
