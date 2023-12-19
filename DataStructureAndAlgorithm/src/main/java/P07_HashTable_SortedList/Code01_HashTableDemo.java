@@ -1,4 +1,4 @@
-package P09_HashTable_SortedList;
+package P07_HashTable_SortedList;
 
 import P04_LinkedList.Structure.Node;
 
