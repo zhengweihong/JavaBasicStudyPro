@@ -17,7 +17,7 @@ public class Code02_SortedListDemo {
         TreeMap<Integer, String> map = new TreeMap<>();
         map.put(0, "0");
         map.remove(0);
-        // 1
+        // null
         System.out.println(map.get(1));
 
         map.put(1, "1");
