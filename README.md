@@ -24,15 +24,18 @@
 
 
 ## Module Java基础语法
-### Package01 基础语法
-### Package02 集合框架
-### Package03 IO
-#### BIO
-### Package04 多线程
-### Package05 网络编程
-### Package06 注解
-### Package07 函数式编程
-### Package08 反射
+### Package01 Java语言
+#### Package01 基础语法
+#### Package02 集合框架
+#### Package03 JVM
+#### Package04 多线程
+#### Package05 IO
+##### BIO
+#### Package06 网络编程
+#### Package07 注解
+#### Package08 反射
+#### Package09 函数式编程
 
-### Package11 JUnit
-### Package12 JDBC
+### Package02 Java框架
+#### JDBC
+#### JUnit
