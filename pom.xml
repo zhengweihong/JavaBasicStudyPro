@@ -13,6 +13,7 @@
         <module>JavaBasicGrammar</module>
         <module>DataStructureAndAlgorithm</module>
         <module>EarnMoney</module>
+        <module>DesignPattern</module>
     </modules>
 
 </project>
