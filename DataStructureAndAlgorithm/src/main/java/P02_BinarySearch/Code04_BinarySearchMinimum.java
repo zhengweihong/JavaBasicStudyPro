@@ -3,7 +3,7 @@ package P02_BinarySearch;
 /**
  * @author : ZWH
  * @date : 2021/05/25
- * @Description : 二分法：局部最小值问题=找极值
+ * @Description : 二分法：局部最小值问题=找极小值
  */
 public class Code04_BinarySearchMinimum {
 
