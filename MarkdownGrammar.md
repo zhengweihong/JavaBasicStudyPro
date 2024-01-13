@@ -10,7 +10,7 @@
 | 分割线 | *和-都可以 | `- - -`、`***` |
 | 无序列表 | *、+、- 作为列表标记 | `+ 文本` |
 | 有序列表 | 数字加上点 | `1. 文本` |
-| 列表嵌套 | 无序、有序都可以包含对方<br>用tab来表示层级关系 | ![markdown_list1](../images/markdown_list1.png "无序嵌套有序")  ![markdown_list2](../images/markdown_list2.png "有序嵌套无序") |
+| 列表嵌套 | 无序、有序都可以包含对方<br>用tab来表示层级关系 | ![markdown_list1](src/main/resources/markdown_list1.png "无序嵌套有序")  ![markdown_list2](src/main/resources/markdown_list2.png "有序嵌套无序") |
 | 引用 | 本身可以嵌套，>越多层数越多<br>若在>后边加5个空格，当前行变成代码段 | `> 文本` |
 | 引用与列表嵌套 | 支持相互混合嵌套 |  |
 | 代码 | 一个反引号，如果想显示反引号，外层就需要2个反引号包裹 | `` `文本` `` |
@@ -19,9 +19,8 @@
 | 链接 | [百度](http://www.baidu.com)、<http://www.baidu.com> | `[链接名称](链接地址)`、`<链接地址>` |
 | 链接统一赋值 | [百度][百度链接] | 文中使用：`[链接名称][id]`<br>文末统一：`[id]:链接地址` |
 | 图片 | 图片标题可以不写 | `![图片的alt属性](图片地址 "图片的title属性=鼠标悬停显示的标题")` |
-| 图片标签 | 可以自定义宽高等属性 | `<img src="images/名称.pn
-g" width="50%" height="20px" title="" />` |
-| 表格 | `|`分隔格子，`-`分隔表头和其他行<br>分隔表头的行可以设置整列的对其方式 | `| 左对齐 | 右对齐 | 居中对齐 |`<br>`|:-|-:|:-:|`<br>`| 单元格 | 单元格 | 单元格 |` |
+| 图片标签 | 可以自定义宽高等属性 | `<img src="images/名称.png" width="50%" height="20px" title="" />` |
+| 表格 | `英文竖线`分隔格子，`-`分隔表头和其他行<br>分隔表头的行可以设置整列的对其方式 | `语法见Line45～47` |
 | 转义 | 可能涉及到的字符：<br>\\  反斜线<br>\`  反引号<br>\*  星号<br>\_  下划线<br>\{\} 花括号<br>\[\] 方括号<br>\(\) 小括号<br>\#  井字号<br>\+  加号<br>\-  减号<br>\.  英文句点<br>\!  感叹号 | 反斜杠`\` |
 
 ### 展示:
@@ -48,14 +47,14 @@ public class HelloWorld {
 | 格子 | 格子 | 单元格 |
 
 # 常用HTML标签
-`<br>`：换行
-`<kbd></kbd>`：<kbd>123</kbd>
-`<b></b>`：<b>123</b>
-`<i></i>`：<i>123</i>
-`<em></em>`：<em>123</em>
-`<sub></sub>`：123<sub>123</sub>
-`<sup></sup>`：123<sup>123</sup>
-`<font color="red">123</font>`：<font color="red">123</font>
+######`<br>`：换行
+######`<kbd></kbd>`：<kbd>123</kbd>
+######`<b></b>`：<b>123</b>
+######`<i></i>`：<i>123</i>
+######`<em></em>`：<em>123</em>
+######`<sub></sub>`：123<sub>123</sub>
+######`<sup></sup>`：123<sup>123</sup>
+######`<font color="red">123</font>`：<font color="red">123</font>
 
 # 参考
 [菜鸟教程](https://www.runoob.com/markdown/md-tutorial.html)
