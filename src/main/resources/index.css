@@ -1,0 +1,27 @@
+body {
+    background: url("background.jpeg") no-repeat fixed;
+    background-size: 100%;
+}
+
+div {
+    /* 绝对定位 */
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+
+ul {
+    /* 隐藏无序列表前的图标 */
+    list-style-type: none;
+}
+
+li {
+    /* 间隔 */
+    margin-top: 5px;
+}
+
+a {
+    /* 隐藏下划线 */
+    text-decoration: none;
+    color: gold;
+}
