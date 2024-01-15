@@ -1,27 +1,27 @@
 body {
     background: url("background.jpeg") no-repeat fixed;
     background-size: 100%;
+    background-color: rgba(123, 183, 214, 0.5);
 }
 
-div {
-    /* 绝对定位 */
-    position: absolute;
+#leftFixed {
+    /* 固定定位 */
+    position: fixed;
     left: 0;
-    top: 30%;
+    top: 35%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 12px;
 }
 
-ul {
-    /* 隐藏无序列表前的图标 */
-    list-style-type: none;
-}
-
-li {
-    /* 间隔 */
+#leftFixed img {
+    width: 25px;
     margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-a {
-    /* 隐藏下划线 */
-    text-decoration: none;
-    color: gold;
+#leftFixed img:hover {
+    position: relative;
+    left: 3px;
+    bottom: 3px;
 }
