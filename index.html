@@ -5,8 +5,17 @@
     <title>导航</title>
     <link rel="shortcut icon" href="src/main/resources/logo.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="src/main/resources/index.css">
+
+    <!-- 新Bootstrap5核心CSS文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+    <!-- 新Bootstrap5核心JavaScript文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- 让Bootstrap5开发的网站对移动设备友好，width=device-width（宽度是设备屏幕的宽度）initial-scale=1（初始的缩放比例） -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<!-- 左侧固定链接 -->
 <div id="leftFixed">
     <div>
         <a href="https://www.bilibili.com/" target="_blank">
@@ -44,6 +53,14 @@
                  title="掘金" alt="掘金">
         </a>
     </div>
+</div>
+<!-- 正文 -->
+<div id="main">
+    <!-- 搜索框：action、input-name都是百度定的 -->
+    <form id="baiduForm" action="https://www.baidu.com/s" method="get" target="_blank" class="input-group mx-auto w-75">
+        <input type="text" name="wd" maxlength="255" class="form-control btn-outline-primary">
+        <input type="submit" value="百度一下" class="btn btn-primary">
+    </form>
 </div>
 </body>
 </html>
