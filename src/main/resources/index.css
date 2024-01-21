@@ -1,5 +1,5 @@
 body {
-    background: url("background.jpeg") no-repeat fixed;
+    background: url("background.jpeg") fixed;
     background-size: 100%;
     background-color: rgba(123, 183, 214, 0.5);
 }
