@@ -61,6 +61,28 @@
         <input type="text" name="wd" maxlength="255" class="form-control border-primary">
         <input type="submit" value="百度一下" class="btn btn-primary">
     </form>
+
+    <!-- 导航 -->
+    <ul class="nav nav-pills small">
+        <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="pill" href="#notice">工作室公告</a>
+        </li>
+        <li class="nav-item me-auto">
+            <a class="nav-link" data-bs-toggle="pill" href="#cases">案例展示</a>
+        </li>
+        <li class="nav-item me-3">
+            <span class="navbar-brand" style="color: mediumpurple;font-family: 'Comic Sans MS', cursive, sans-serif">
+                <b>Code & Creativity increase Comfort of life</b>
+            </span>
+        </li>
+    </ul>
+
+    <div id="content" class="tab-content h-100 pt-2">
+        <iframe src="src/main/resources/notice.html" id="notice" height="90%"
+                class="tab-pane container-fluid active"></iframe>
+        <iframe src="src/main/resources/cases.html" id="cases" height="90%"
+                class="tab-pane container-fluid"></iframe>
+    </div>
 </div>
 </body>
 </html>

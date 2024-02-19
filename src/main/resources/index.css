@@ -33,3 +33,7 @@ body {
     border-radius: 5px;
     height: 90vh;
 }
+
+#baiduForm {
+    margin-bottom: 20px;
+}
