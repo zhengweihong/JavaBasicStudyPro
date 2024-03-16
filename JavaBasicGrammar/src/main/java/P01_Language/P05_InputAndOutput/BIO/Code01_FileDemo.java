@@ -6,9 +6,11 @@ public class Code01_FileDemo {
 	final static String absolutePath = "/Users/zwh/WorkSpace/IDEAWorkspace/JavaBasicStudyPro/JavaBasicGrammar/src/main/resources/";
 
 	public static void main(String[] args) {
-		//不加路径创建在Project项目根目录下(JavaBasicStudyPro)
+		// 不加路径创建在Project项目根目录下(JavaBasicStudyPro)
+		// 找不到相对路径可以用下边系统参数看看代码路径在哪里
+		System.out.println(System.getProperty("user.dir"));
 		File file = new File("a.txt");
-		File f = new File(absolutePath+ "a.txt");
+		File f = new File(absolutePath + "a.txt");
 		
 		//创建文件，捕获异常
 		try {
