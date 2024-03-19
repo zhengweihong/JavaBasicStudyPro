@@ -28,7 +28,7 @@ public class Code02_MergeSortNoRecursion {
                 lPoint = r + 1;
             }
 
-            // 步长乘2，防溢出
+            // 步长乘2，防溢出Integer.MAX_VALUE
             if (mergeSize > arr.length / 2) {
                 break;
             }
