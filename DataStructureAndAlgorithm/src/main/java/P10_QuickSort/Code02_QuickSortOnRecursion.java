@@ -17,7 +17,7 @@ public class Code02_QuickSortOnRecursion {
     /**
      * 把arr中下标l到r排有序
      */
-    private void process(int[] arr, int l, int r) {//0-3
+    private void process(int[] arr, int l, int r) {
         // 停止条件 >违法
         if (l >= r) {
             return;
