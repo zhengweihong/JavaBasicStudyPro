@@ -9,16 +9,6 @@ import java.util.Stack;
  */
 public class Code03_QuickSortNoRecursion {
 
-    class Op {
-        int l;
-        int r;
-
-        public Op(int l, int r) {
-            this.l = l;
-            this.r = r;
-        }
-    }
-
     public void quickSortNoRecursion(int[] arr) {
         if (arr == null || arr.length < 2) {
             return;
@@ -51,6 +41,16 @@ public class Code03_QuickSortNoRecursion {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
+    }
+
+    static class Op {
+        int l;
+        int r;
+
+        public Op(int l, int r) {
+            this.l = l;
+            this.r = r;
+        }
     }
 
 }
