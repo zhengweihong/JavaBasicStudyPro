@@ -7,9 +7,6 @@ package P11_Heap;
  */
 public class Code02_HeapOperates {
 
-    public static void main(String[] args) {
-    }
-
     /**
      * 向小根堆添加元素
      *
