@@ -1,4 +1,4 @@
-package P01_Language.P04_Multithreading;
+package P01_Language.P04_Multithread;
 
 public class Code03_ThreadAPIDemo {
 

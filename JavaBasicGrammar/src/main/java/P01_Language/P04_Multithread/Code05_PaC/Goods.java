@@ -1,4 +1,4 @@
-package P01_Language.P04_Multithreading.Code05_PaC;
+package P01_Language.P04_Multithread.Code05_PaC;
 
 public class Goods {
 	//默认不存在商品

@@ -1,4 +1,4 @@
-package P01_Language.P04_Multithreading.Code05_PaC_JUCDemo;
+package P01_Language.P04_Multithread.Code05_PaC_JUCDemo;
 
 public class Goods {
 

@@ -1,4 +1,4 @@
-package P01_Language.P04_Multithreading.Code06_ThreadPool;
+package P01_Language.P04_Multithread.Code06_ThreadPool;
 
 import java.util.concurrent.*;
 
