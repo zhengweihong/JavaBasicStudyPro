@@ -1,4 +1,4 @@
-package P01_Language.P04_Multithread;
+package P01_Language.P04_Multithread.P01_Thread;
 
 import java.util.concurrent.*;
 
