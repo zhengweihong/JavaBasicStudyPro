@@ -1,5 +1,7 @@
 package P01_Language.P04_Multithread.P01_Thread;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * @author : ZWH
  * @date : 2024/04/09
@@ -7,7 +9,7 @@ package P01_Language.P04_Multithread.P01_Thread;
  */
 public class Code02_ThreadApi {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         // 当前主线程对象
         Thread thread = Thread.currentThread();
 
@@ -26,6 +28,12 @@ public class Code02_ThreadApi {
         System.out.println(thread.getPriority());
         thread.setPriority(10);
         System.out.println(thread.getPriority());
+
+        // 线程睡眠
+        // 同抛出InterruptedException
+        // 时间单位不同：上边毫秒需要换算、下边枚举类单位可选
+        Thread.sleep(1);
+        TimeUnit.SECONDS.sleep(1);
     }
 
 }
