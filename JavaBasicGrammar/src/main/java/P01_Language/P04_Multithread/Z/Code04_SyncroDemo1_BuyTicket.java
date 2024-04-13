@@ -1,4 +1,4 @@
-package P01_Language.P04_Multithread;
+package P01_Language.P04_Multithread.Z;
 
 public class Code04_SyncroDemo1_BuyTicket implements Runnable{
 	
