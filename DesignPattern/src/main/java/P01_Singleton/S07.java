@@ -7,9 +7,9 @@ package P01_Singleton;
  */
 public class S07 {
     /**
-     * 是否需要volatile：说是因为JIT的指令重排导致不加会多线程调用有问题
+     * 需要volatile：防止new对象发生JIT指令重排，先建立引用后赋值对象内成员变量。超高并发可能发生
      */
-    private static S07 INSTANCE;
+    private static volatile S07 INSTANCE;
 
     private S07() {
     }
