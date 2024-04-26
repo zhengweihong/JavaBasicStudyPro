@@ -4,7 +4,6 @@ package InterviewQuestion;
  * @author : ZWH
  * @date : 2024/04/24
  * @Description : 多抓鱼笔试题目：输入等腰直角三角形边长N，输出阅读顺序的元素编号数组。元素编号从第一列开始往下，逆时针转圈
- * <p>
  * 输入：5
  * 1    12  11  10  9
  * 2    13  15  8
