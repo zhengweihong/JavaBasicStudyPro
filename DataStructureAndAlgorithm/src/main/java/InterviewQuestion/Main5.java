@@ -1,58 +1,62 @@
 package InterviewQuestion;
 
+import java.util.Stack;
+
 /**
  * @author : ZWH
- * @Description : 滴滴一面：删除链表倒数第n个结点
- * @date : 2024/04/26
+ * @Description : 二叉树，整型数据，跟到叶子一个路径元素和==n，true
+ * @date : 2024/04/28
  */
 public class Main5 {
     public static void main(String[] args) {
-        Node head = new Node(1, new Node(2, new Node(3, new Node(4, new Node(5, null)))));
-        Node node = function(head, 2);
-        while (node != null) {
-            System.out.println(node.data);
-            node = node.next;
-        }
+        TreeNode root = new TreeNode(1, new TreeNode(4, null, null), new TreeNode(3, null, null));
+        System.out.println(funciton(root, 6));
     }
 
-    private static Node function(Node head, int n) {
-        if (head == null || n == 0) {
-            return head;
+    private static boolean funciton(TreeNode root, int n) {
+        if (root == null) {
+            return false;
         }
 
-        Node pre = head;
-        for (int i = 1; i < n; i++) {
-            pre = pre.next;
-        }
+        Stack<NodeSum> nodeSumStack = new Stack<>();
+        nodeSumStack.push(new NodeSum(root, root.data));
 
-        Node del = null;
-        while (pre.next != null) {
-            pre = pre.next;
-            if (del == null) {
-                del = head;
-            } else {
-                del = del.next;
+        while (!nodeSumStack.isEmpty()) {
+            NodeSum tmp = nodeSumStack.pop();
+            if (tmp.node.left != null) {
+                nodeSumStack.push(new NodeSum(tmp.node.left, tmp.sum + tmp.node.left.data));
+            } else if (n == tmp.sum) {
+                return true;
+            }
+            if (tmp.node.right != null) {
+                nodeSumStack.push(new NodeSum(tmp.node.right, tmp.sum + tmp.node.right.data));
+            } else if (n == tmp.sum) {
+                return true;
             }
         }
 
-        if (del == null) {
-            return head;
-        } else if (del == head) {
-            return head.next;
-        } else {
-            del.next = del.next.next;
-        }
-
-        return head;
+        return false;
     }
 }
 
-class Node {
-    public int data;
-    public Node next;
+class NodeSum {
+    TreeNode node;
+    int sum;
 
-    public Node(int data, Node next) {
+    public NodeSum(TreeNode node, int sum) {
+        this.node = node;
+        this.sum = sum;
+    }
+}
+
+class TreeNode {
+    public int data;
+    public TreeNode left;
+    public TreeNode right;
+
+    public TreeNode(int data, TreeNode left, TreeNode right) {
         this.data = data;
-        this.next = next;
+        this.left = left;
+        this.right = right;
     }
 }
